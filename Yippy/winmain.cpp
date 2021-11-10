@@ -50,7 +50,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
   while (GetMessage(&msg, NULL, 0, 0))
   {
     TranslateMessage(&msg); // Converts keystrokes to characters
-    DispatchMessage(&msg); // Invokes function
+    DispatchMessage(&msg);  // Invokes function
   }
 
   return 0; // End of program
