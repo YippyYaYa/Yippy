@@ -1,3 +1,0 @@
-E:\Projects\Yippy\Yippy\x64\Debug\Yippy.exe
-D:\Projects\Yippy\Yippy\x64\Debug\Yippy.exe
-D:\Projects\Yippy\Yippy\x64\Debug\Yippy.pdb
