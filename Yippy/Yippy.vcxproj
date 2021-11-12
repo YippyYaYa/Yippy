@@ -19,15 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Engine.cpp" />
-    <ClCompile Include="src\glfw\glfwWrapper.cpp" />
-    <ClCompile Include="src\imgui\imguiWrapper.cpp" />
+    <ClCompile Include="deps\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="deps\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="deps\imgui\imgui.cpp" />
+    <ClCompile Include="deps\imgui\imgui_demo.cpp" />
+    <ClCompile Include="deps\imgui\imgui_draw.cpp" />
+    <ClCompile Include="deps\imgui\imgui_tables.cpp" />
+    <ClCompile Include="deps\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Engine.h" />
-    <ClInclude Include="src\glfw\glfwWrapper.h" />
-    <ClInclude Include="src\imgui\imguiWrapper.h" />
+    <ClInclude Include="deps\GLFW\include\glfw3.h" />
+    <ClInclude Include="deps\GLFW\include\glfw3native.h" />
+    <ClInclude Include="deps\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="deps\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="deps\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="deps\imgui\imconfig.h" />
+    <ClInclude Include="deps\imgui\imgui.h" />
+    <ClInclude Include="deps\imgui\imgui_internal.h" />
+    <ClInclude Include="deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="deps\imgui\imstb_truetype.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -129,11 +141,12 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>..\Yippy\deps\GLFW\include;..\Yippy\deps\imgui\backends;..\Yippy\deps\imgui</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3_debug.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\Yippy\deps\GLFW\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -145,7 +158,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\Yippy\deps\GLFW\include;..\Yippy\deps\imgui</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Yippy\deps\GLFW\include;..\Yippy\deps\imgui\backends;..\Yippy\deps\imgui</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
