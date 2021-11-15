@@ -40,4 +40,9 @@ namespace Yippy
     glfwMakeContextCurrent((GLFWwindow*)wndHandler);
     glfwSwapInterval(1); // Enable vsync
   }
+
+  glfwWrapper::~glfwWrapper()
+  {
+
+  }
 }
