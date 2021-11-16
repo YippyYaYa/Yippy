@@ -26,9 +26,6 @@
     <ClCompile Include="deps\imgui\imgui_draw.cpp" />
     <ClCompile Include="deps\imgui\imgui_tables.cpp" />
     <ClCompile Include="deps\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="src\Engine.cpp" />
-    <ClCompile Include="src\glfw\glfwWrapper.cpp" />
-    <ClCompile Include="src\imgui\imguiWrapper.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -41,9 +38,6 @@
     <ClInclude Include="deps\imgui\imstb_rectpack.h" />
     <ClInclude Include="deps\imgui\imstb_textedit.h" />
     <ClInclude Include="deps\imgui\imstb_truetype.h" />
-    <ClInclude Include="src\Engine.h" />
-    <ClInclude Include="src\glfw\glfwWrapper.h" />
-    <ClInclude Include="src\imgui\imguiWrapper.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
